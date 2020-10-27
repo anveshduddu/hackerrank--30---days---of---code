@@ -1,0 +1,13 @@
+
+
+    def insert(self,head,data):
+        current = head
+        if head == None:
+            head = Node(data)
+        else:
+            while current.next != None:
+                current = current.next
+            current.next = Node(data)
+        return head
+            
+
