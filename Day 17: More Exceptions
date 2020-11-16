@@ -1,0 +1,13 @@
+#Write your code here
+class Calculator:
+    def power(self,n,p):
+        if n < 0 or p < 0:
+            raise ValueError("n and p should be non-negative")
+        elif p == 0:
+            return 1
+        else:
+            wynik = n
+            for _ in range(p-1):
+                wynik *= n
+            return wynik
+
