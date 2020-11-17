@@ -1,0 +1,8 @@
+
+
+    def getHeight(self,root):
+        leftH = self.getHeight(root.left) if root.left else -1
+        rightH = self.getHeight(root.right) if root.right else -1
+        
+        return leftH+1 if leftH > rightH else rightH+1
+
