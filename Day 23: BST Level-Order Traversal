@@ -1,0 +1,16 @@
+
+
+    def levelOrder(self,root):
+        s = ''
+        if (root != None):
+            q = [root]
+            while (len(q) != 0):
+                s += str(q[0].data) + ' '
+                if (q[0].left != None):
+                    q.append(q[0].left)
+                if (q[0].right != None):
+                    q.append(q[0].right)
+                q.pop(0)
+        print s
+        
+
